@@ -25,7 +25,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: gurpreetgandhi
-          password: Nokia@2690
+          password: d47d8a4e-130e-4aa7-8242-8c19cfb54073
       -
         name: Build and push
         uses: docker/build-push-action@v2
