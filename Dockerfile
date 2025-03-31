@@ -10,6 +10,6 @@ RUN mvn -f /home/app/pom.xml clean package -DskipTests
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /home/app/target/jspdemo-0.0.1.jar /usr/local/lib/jspdemo-0.0.1.jar
+COPY --from=build /home/app/target/jspdemo-0.0.2.jar /usr/local/lib/jspdemo-0.0.2.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/jspdemo-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/jspdemo-0.0.2.jar"]
